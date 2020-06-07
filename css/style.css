@@ -63,6 +63,12 @@ ul li {
   margin-left: 20px;
 }
 
+.header .container-header nav ul li a:hover {
+  transition: 0.3s ease-out;
+  color: #13172c;
+  font-weight: 600;
+}
+
 .header .logo {
   position: absolute;
   top: 100px;
@@ -117,6 +123,28 @@ ul li {
   align-self: center;
   justify-self: center;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .info .card .content .icon {
+  margin-bottom: 14px;
+}
+
+.main .info .card .content .icon img {
+  width: 40px;
+  fill: blue;
+}
+
+.main .info .card .content .icon svg:hover {
+  transition: 0.4s ease-out;
+  transform: scale(1.05);
+  filter: contrast(140%);
+}
+
+.main .info .card .content .icon svg:hover path {
+  fill: #c9505e;
+  transition: 0.4s ease-out;
 }
 
 .main .info .card .content img {
@@ -146,7 +174,7 @@ ul li {
 }
 
 .main .info .card .content .ct .progress.css::after {
-  width: 185px;
+  width: 180px;
 }
 
 .main .info .card .content .ct .progress.js::after {
@@ -154,13 +182,153 @@ ul li {
 }
 
 .main .info .card .content .ct .progress.rc::after {
-  width: 140px;
+  width: 135px;
 }
 
 .main .info .card .content .ct .progress.nd::after {
-  width: 150px;
+  width: 145px;
 }
 
 .main .info .card .content .ct .progress.ht::after {
-  width: 190px;
+  width: 185px;
+}
+
+/* CARD EVENTS */
+.main .info .card .content .card--event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.main .info .card .content .card--event p {
+  color: #67e6cf;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.main .info .card .content .card--event img {
+  width: 45px;
+}
+
+.main .info .card .content .card--event .mowah-logo {
+  width: 60%;
+}
+
+/* ABOUT */
+.main .about {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.main .about .title {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.main .about .title h1,
+.main .about .title svg {
+  filter: drop-shadow(0px 4px 4px #13172c);
+}
+
+.main .about .profile {
+  width: 95%;
+  height: 250px;
+  background: #13172c;
+  box-shadow: 4px 10px 30px #1f0307;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.main .about .profile img {
+  margin-top: -42px;
+}
+
+.main .about .profile p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffffff;
+  margin-left: -20px;
+}
+
+/* ACADEMIC PROGRESS */
+.main .academic {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.main .academic .title {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main .academic .title h1,
+.main .academic .title svg {
+  filter: drop-shadow(0px 4px 4px #13172c);
+}
+
+.main .academic .line-progress .line {
+  width: 25px;
+  height: 250px;
+  background: white;
+  position: relative;
+  border-radius: 2px;
+}
+
+.main .academic .line-progress .card {
+  position: absolute;
+  width: 300px;
+  height: 70px;
+  background: #13172c;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.main .academic .line-progress .line .left {
+  right: 10px;
+  top: 40px;
+  text-align: right;
+}
+
+.main .academic .line-progress .line p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.main .academic .line-progress .line .left p {
+  margin-right: 10px;
+}
+
+.main .academic .line-progress .line .year {
+  color: #f8b295;
+}
+
+.main .academic .line-progress .line .right {
+  left: 10px;
+  top: 140px;
+  text-align: left;
+}
+
+.main .academic .line-progress .line .right p {
+  margin-left: 10px;
 }
