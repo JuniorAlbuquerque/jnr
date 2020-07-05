@@ -258,7 +258,9 @@ ul li {
   font-weight: 600;
   font-size: 22px;
   color: #ffffff;
-  margin-left: -20px;
+  margin-left: -25px;
+  margin-right: 14px;
+  text-align: justify;
 }
 
 /* ACADEMIC PROGRESS */
