@@ -411,7 +411,7 @@ ul li {
   font-size: 18px;
 }
 
-.main .projects .card .card--content button {
+.main .projects .card .card--content .project-btn {
   padding: 14px;
   margin-top: 80px;
   background: none;
@@ -422,6 +422,14 @@ ul li {
   cursor: pointer;
   outline: none;
   border: 1px solid #67e6cf;
+  text-align: center;
+}
+
+.main .projects .card .card--content .project-btn:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  transition: 0.2s ease-in-out;
 }
 
 /* CONTACT */
@@ -512,6 +520,40 @@ ul li {
   width: 370px;
   bottom: 0;
   left: 0;
+}
+
+.homebutton {
+  background: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 20px;
+  cursor: pointer;
+  right: 20px;
+  z-index: 999;
+}
+
+.homebutton button {
+  background: none;
+  border: none;
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.homebutton:hover {
+  background: black;
+  transition: 0.2s ease-in-out;
+}
+
+.homebutton:hover button {
+  color: white;
+  transition: 0.2s ease-in-out;
 }
 
 /* Media queries */
