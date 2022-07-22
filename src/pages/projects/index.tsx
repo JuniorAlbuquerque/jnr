@@ -2,7 +2,7 @@ import Button from '@/components/Button'
 import IconGithub from '@/components/icons/Github'
 import LinkPreview from '@/components/LinkPreview'
 import Head from 'next/head'
-import { styles } from './styles'
+import { styles } from '@/styles/pageStyles/projects'
 
 const Projects: React.FC = () => {
   return (

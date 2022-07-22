@@ -1,6 +1,6 @@
 import Card from '@/components/Card'
 import React, { useRef } from 'react'
-import { styles } from './styles'
+import { styles } from '@/styles/pageStyles/about'
 import Button from '@/components/Button'
 import ArrowDown from '@/components/icons/ArrowDown'
 import SectionHistory from '@/components/SectionHistory'

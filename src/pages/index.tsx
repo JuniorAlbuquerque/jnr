@@ -3,7 +3,7 @@ import { ArrowRight } from '@/components/icons'
 import { useKBar } from 'kbar'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { styles } from './homeStyles'
+import { styles } from '@/styles/pageStyles/home'
 
 const Home: NextPage = () => {
   const { query } = useKBar()

@@ -9,7 +9,7 @@ import { useForm } from '@/hooks/useForm'
 import Head from 'next/head'
 import React, { FormEvent, useRef, useState } from 'react'
 import { toast } from 'react-toastify'
-import { styles } from './styles'
+import { styles } from '@/styles/pageStyles/contact'
 
 type EmailForm = {
   user_name: string
