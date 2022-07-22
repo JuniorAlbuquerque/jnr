@@ -11,6 +11,7 @@ import { Animator, GroupName, Item, Positioner, Search } from './styles'
 import { useRouter } from 'next/router'
 import { useActions } from '@/constants/actions'
 import { useTheme } from 'next-themes'
+import { ToastContainer } from 'react-toastify'
 
 type RenderItemProps = {
   item: ActionImpl
@@ -85,6 +86,7 @@ function RenderResults() {
 
 const CommandBar: FC<CommandBarProps> = ({ children }) => {
   const { actions } = useActions()
+  const { theme } = useTheme()
   const router = useRouter()
 
   return (
@@ -97,6 +99,11 @@ const CommandBar: FC<CommandBarProps> = ({ children }) => {
           </Animator>
         </Positioner>
       </KBarPortal>
+      <ToastContainer
+        position="bottom-left"
+        toastClassName="toast-content"
+        theme={theme === 'dark' ? 'dark' : 'light'}
+      />
 
       {children}
     </KBarProvider>

@@ -6,8 +6,7 @@ import AnimatedPage from '@/components/AnimatePage'
 import Header from '@/components/Header'
 import { useEffect } from 'react'
 import CommandBar from '@/components/CommandBar'
-import { KBarProvider } from 'kbar'
-import { useActions } from '@/constants/actions'
+import 'react-toastify/dist/ReactToastify.css'
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   globalStyles()

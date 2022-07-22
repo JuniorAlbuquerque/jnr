@@ -1,13 +1,13 @@
-import { navItems } from '@/data/navItems'
-import { useKBar } from 'kbar'
 import React from 'react'
 import Link from 'next/link'
 import Button from '../Button'
 import { Moon, Sun } from '../icons'
 import CommandLine from '../icons/CommandLine'
 import LinkItem from '../LinkItem'
-import { box, header, root } from './styles'
+import { header, root } from './styles'
 import { useTheme } from 'next-themes'
+import { navItems } from '@/constants/navItems'
+import { useKBar } from 'kbar'
 
 const Header: React.FC = () => {
   const { theme, setTheme } = useTheme()
