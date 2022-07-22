@@ -16,9 +16,11 @@ const animations: Variants = {
   exit: { opacity: 0 }
 }
 
-type AnimatedPageProps = ComponentProps<typeof Container>
+type AnimatedPageProps = ComponentProps<typeof Container> & {
+  pageKey: string
+}
 
-const AnimatedPage = ({ children, variant }: AnimatedPageProps) => {
+const AnimatedPage = ({ children, variant, pageKey }: AnimatedPageProps) => {
   return (
     <Container
       variants={animations}
@@ -26,6 +28,7 @@ const AnimatedPage = ({ children, variant }: AnimatedPageProps) => {
       animate="animate"
       exit="exit"
       variant={variant}
+      key={pageKey}
     >
       {children}
     </Container>

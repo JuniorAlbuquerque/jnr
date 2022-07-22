@@ -44,7 +44,7 @@ export const globalStyles = globalCss({
   button: {
     cursor: 'pointer'
   },
-  'body, #root': {
+  'body, #__next': {
     minHeight: '100vh',
     /* mobile viewport bug fix */
     'min-height': '-webkit-fill-available',
@@ -55,7 +55,7 @@ export const globalStyles = globalCss({
       fontFamily: 'Be Vietnam Pro, sans-serif'
     }
   },
-  '#root': {
+  '#__next': {
     flex: 1
   }
 })

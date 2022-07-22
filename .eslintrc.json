@@ -46,6 +46,7 @@
         "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
         "no-use-before-define": "off",
         "react/display-name": "off",
+        "react/no-unescaped-entities": "off",
         "prettier/prettier": [
           "error",
           {
