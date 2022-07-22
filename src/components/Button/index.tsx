@@ -10,7 +10,7 @@ const Button: FC<ButtonProps> = ({ variant, busy, children, ...rest }) => {
   return (
     <Container variant={variant} {...rest}>
       {busy && <Loader />}
-      <span>{children}</span>
+      {children}
     </Container>
   )
 }
