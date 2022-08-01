@@ -4,16 +4,11 @@ import { darkTheme } from '../styles/theme'
 import { globalStyles } from '@/styles/global'
 import AnimatedPage from '@/components/AnimatePage'
 import Header from '@/components/Header'
-import { useEffect } from 'react'
 import CommandBar from '@/components/CommandBar'
 import 'react-toastify/dist/ReactToastify.css'
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   globalStyles()
-
-  useEffect(() => {
-    console.log(router.route)
-  }, [router.route])
 
   return (
     <ThemeProvider
